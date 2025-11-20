@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Randolph Charles — Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="container header" role="banner">
+    <a class="brand" href="index.html" aria-label="Home - Your Name">
+      <div class="logo">YN</div>
+      <div>
+        <div class="site-title">Your Name</div>
+        <div class="small">Skills & Tools</div>
+      </div>
+    </a>
+
+    <nav role="navigation" aria-label="Primary">
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+      <div class="nav">
+        <a href="index.html">About</a>
+        <a href="skills.html" aria-current="page">My Skills</a>
+        <a href="projects.html">My Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="mobileNav" class="mobile-nav"></div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="card page-hero" aria-labelledby="skills-title">
+      <h1 id="skills-title">My Skills</h1>
+      <p class="small">I'm realy only good at basketball, below average cook, and I know how to use Microsoft apps. Other than that, that's it. </p>
+    </section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="technical">
+        <h2 id="technical">Technical</h2>
+        <ul>
+          <li><strong>HTML/CSS</strong> — Semantic HTML, responsive, grid/flex layout, accessible forms</li>
+          <li><strong>JavaScript</strong> — DOM, ES6+, async patterns</li>
+          <li><strong>React</strong> — components, hooks, state management</li>
+          <li><strong>Testing</strong> — unit tests, accessibility testing</li>
+        </ul>
+
+        <h3 style="margin-top:1rem">Tools</h3>
+        <p class="small">VS Code · Git · GitHub · Figma · Chrome DevTools · Netlify/GitHub Pages</p>
+      </section>
+
+      <aside class="card" aria-labelledby="work-style">
+        <h3 id="work-style">Work style</h3>
+        <p class="small">I value clear communication, small iterative releases, and accessible UI. I write documentation and tests to help future maintainers.</p>
+
+        <h4 style="margin-top:1rem">Learning</h4>
+        <p class="small">Currently learning TypeScript and serverless functions to expand backend skills.</p>
+      </aside>
+    </div>
+
+    <footer class="footer">Back to <a href="index.html">About</a> · <a href="projects.html">Projects</a></footer>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const mobileNav = document.getElementById('mobileNav');
+    mobileNav.innerHTML = `
+      <a href="index.html">About</a>
+      <a href="skills.html">My Skills</a>
+      <a href="projects.html">My Projects</a>
+      <a href="contact.html">Contact</a>
+    `;
+  </script>
+</body>
+</html>
